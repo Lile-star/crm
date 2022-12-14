@@ -3,18 +3,18 @@ package com.crm.interceptors;
 
 import com.crm.commons.UserUtils;
 import com.crm.workbench.user.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 @Component
 public class PermissionInterceptor implements HandlerInterceptor {
-    @Autowired
+    @Resource
      private UserUtils userUtils;
-    @Autowired
+    @Resource
     private StringRedisTemplate stringRedisTemplate;
 
 
