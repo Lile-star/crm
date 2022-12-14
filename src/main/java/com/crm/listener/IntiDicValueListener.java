@@ -23,6 +23,7 @@ public class IntiDicValueListener implements ServletContextListener {
         stringRedisTemplate.opsForHash().putAll("dicValue",dicValueMap);
         System.out.println("tomcat开启了");
         System.out.println("xxx");
+        System.out.println("xxx");
     }
 
     @Override
