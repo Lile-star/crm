@@ -25,6 +25,7 @@ public class IntiDicValueListener implements ServletContextListener {
         System.out.println("xxx");
         System.out.println("这是master的修改");
         System.out.println("xxx");
+        System.out.println("push test");
     }
 
     @Override
